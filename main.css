@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    flex-shrink: 0;
+    background: linear-gradient(to bottom right, #1f701f, #087e08);
+    color: #e3e3e3;
+    font: bold 20px "Trebuchet MS";
+    margin-top: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom right, darkred, red);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 44px #ababab;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth {
+    text-decoration: none;
+    color: white;
+}
+
+.auth:hover {
+    cursor: pointer;
+}
+
+.sep {
+    display: inline;
+}
+
+.header div {
+    color: white;
+    font: bold 28px "Trebuchet MS";
+    margin: 8px 12px;
+}
+
+.content {
+    margin-top: 116px;
+    justify-content: center;
+    text-align: center;
+}
+
+.news {
+    width: 70em;
+    padding: 20px 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 28px auto;
+    text-align: left;
+}
+
+.news .title {
+    text-align: center;
+    font: bold 26px "Trebuchet MS";
+    margin-bottom: 12px;
+}
+
+.news .preview {
+    font-size: 22px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.text1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text1 img {
+    margin-bottom: 20px;
+}
+
+.news .text2 {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.news .text2 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news .text3 {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.news .text4 {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 160px;
+}
+
+img {
+    float: left;
+    margin-right: 12px;
+    width: 480px;
+}
+
+.date {
+    color: #626262;
+    text-align: left;
+}
+
+.buttonsRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.newsList {
+    width: 60em;
+    border-radius: 25px;
+    padding: 20px 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 28px auto;
+    box-shadow: 0 0 16px #ababab;
+    text-align: left;
+}
+
+.newsList .title {
+    text-align: center;
+    font: bold 24px "Trebuchet MS";
+    margin-bottom: 12px;
+}
+
+.newsList .preview {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.link {
+    font: 20px "Trebuchet MS";
+    color: darkgreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #009d00;
+}
+
+.authorField {
+    width: 60em;
+    border-radius: 25px;
+    padding: 20px 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 28px auto;
+    box-shadow: 0 0 16px #ababab;
+    text-align: left;
+}
+
+.authorField .title {
+    text-align: left;
+    font: bold 24px "Trebuchet MS";
+    margin-bottom: 12px;
+}
+
+.authorField .email, .authorField .phoneNumber {
+    font: 20px "Trebuchet MS";
+    margin-bottom: 8px;
+}
+
+.backToMain {
+    width: 100%;
+    text-align: left;
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 0px auto;
+}
+
+.footerAbs {
+    background: linear-gradient(to bottom right, #1f701f, #087e08);
+    color: #e3e3e3;
+    font: bold 20px "Trebuchet MS";
+    margin-top: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a {
+    color: #e3e3e3;
+}
+
+.footerAbs a {
+    color: #e3e3e3;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footerAbs a:hover {
+    color: white;
+}
+
+.addNewsForm {
+    justify-content: center;
+    text-align: center;
+}
+
+.previewAdd {
+    justify-content: center;
+}
+
+.addTitle, .addPreview, .addText {
+    outline: none;
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 0 16px #ababab;
+    padding: 4px 8px;
+    width: 100%;
+}
+
+.addTitle {
+    font: 24px "Trebuchet MS";
+}
+
+.addPreview, .addText {
+    resize: none;
+    font: 20px "Trebuchet MS";
+}
+
+.addNews {
+    outline: none;
+    background-color: #087e08;
+    color: white;
+    font: 20px "Trebuchet MS";
+    padding: 8px 10px;
+    border: 1px solid #087e08;
+    border-radius: 12px;
+}
+
+.addNews:hover {
+    cursor: pointer;
+    background-color: #009d00;
+    border-color: #009d00;
+}
+
+.logRegTitle {
+    font: bold 32px "Trebuchet MS";
+    color: darkgreen;
+}
+
+.outer {
+    margin-top: 10em;
+    justify-content: center;
+    text-align: center;
+}
+
+.login, .password {
+    font: 24px "Trebuchet MS";
+    outline: none;
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 0 0 16px #ababab;
+    padding: 8px 10px;
+    width: 16em;
+    margin: 12px 0;
+}
+
